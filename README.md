@@ -33,6 +33,7 @@ The first step was to create a secure bridge between the on-premise Active Direc
 **Actions Taken:**
 1. Downloaded the **Okta Active Directory Agent** installer from the Okta Admin Console (`Directory > Directory Integrations`).
 <img width="498" height="384" alt="Okta-installation" src="https://github.com/user-attachments/assets/982e3e63-b292-4a9c-855e-a46c5affaf5d" />
+
 2.  Installed the agent on the Windows Server domain controller (`mylab.com`), running it as an administrator.
 4.  During installation, configure the agent with the following key settings:
     - **Active Directory Domain:** `mylab.com`
