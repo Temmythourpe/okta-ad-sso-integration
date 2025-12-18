@@ -16,14 +16,14 @@ This project demonstrates a modern **hybrid identity management** setup by integ
 **Key Skills Demonstrated:** Identity & Access Management (IAM), Okta Administration, Active Directory Synchronization, SAML/SSO Configuration, Troubleshooting.
 
 ## Reference: The Foundation
-This project extends the user lifecycle automation built in a previous lab: **[Active Directory User Management](https://github.com/Temmythourpe/Active-Directory-User-Management)**. That project automated user onboarding/offboarding in a Windows Server Active Directory environment (mylab.com).
+This project extends the user lifecycle automation built in a previous lab: **[Active Directory User Management](https://github.com/Temmythourpe/Active-Directory-User-Management)**. The project automated user onboarding/offboarding in a Windows Server Active Directory environment (mylab.com).
 
-## Lab Architecturei
 ## Lab Architecture
 This project connected two primary environments:
-1.  **On-Premise Lab (`mylab.com`):** A Windows Server 2022 domain controller hosting Active Directory Domain Services, with users and groups managed by the [referenced PowerShell automation project](https://github.com/Temmythourpe/Active-Directory-User-Management).
+1.  **On-Premise Lab (mylab.com):** A Windows Server 2022 domain controller hosting Active Directory Domain Services, with users and groups managed by the [(https://github.com/Temmythourpe/Active-Directory-User-Management/blob/main/UserManagement-Project/Scripts/New-UserOnboarding.ps1)].
 2.  **Cloud Identity Platform (Okta):** A free Okta Developer account used as the central Identity Provider (IdP).
 ** Data & Identity Flow **
+https://github.com/Temmythourpe/okta-ad-sso-integration/blob/main/Assets/Okta-flow-diagram.drawio.png
 On-Premise Active Directory (mylab.com)
         │
         │ (Okta AD Agent Sync)
