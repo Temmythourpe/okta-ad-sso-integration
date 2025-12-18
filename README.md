@@ -1,7 +1,7 @@
 # Okta & Active Directory SSO Integration Lab
 
 ## Project Overview
-This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing end-to-end enterprise identity workflow.
+This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing an end-to-end enterprise identity workflow.
 
 **Key Skills Demonstrated:** Identity & Access Management (IAM), Okta Administration, Active Directory Synchronization, SAML/SSO Configuration, Troubleshooting.
 
@@ -11,7 +11,7 @@ This project extends the user lifecycle automation built in a previous lab: **[A
 ## Lab Architecture# Okta & Active Directory SSO Integration Lab
 
 ## Project Overview
-This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing end-to-end enterprise identity workflow.
+This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing an end-to-end enterprise identity workflow.
 
 **Key Skills Demonstrated:** Identity & Access Management (IAM), Okta Administration, Active Directory Synchronization, SAML/SSO Configuration, Troubleshooting.
 
@@ -25,32 +25,22 @@ This project connected two primary environments:
 ** Data & Identity Flow **
 <img width="220" height="476" alt="Okta-flow-diagram drawio" src="https://github.com/user-attachments/assets/a7be1c1d-951c-4ac4-a7ea-fb7e039e98ce" />
 
-On-Premise Active Directory (mylab.com)
-        │
-        │ (Okta AD Agent Sync)
-        ↓
-   Okta Cloud Tenant
- (Identity Provider / IdP)
-        │
-        │ (SAML 2.0 Authentication)
-        ↓
-   Cloud Application
-   (Slack - Service Provider)
-   ## Implementation Steps
+## Implementation Steps
 
 ### Step 1: Establish Directory Synchronization with Okta AD Agent
 The first step was to create a secure bridge between the on-premise Active Directory and the Okta cloud.
 
 **Actions Taken:**
-1.  Downloaded the **Okta Active Directory Agent** installer from the Okta Admin Console (`Directory > Directory Integrations`).
+1. Downloaded the **Okta Active Directory Agent** installer from the Okta Admin Console (`Directory > Directory Integrations`).
+<img width="498" height="384" alt="Okta-installation" src="https://github.com/user-attachments/assets/982e3e63-b292-4a9c-855e-a46c5affaf5d" />
 2.  Installed the agent on the Windows Server domain controller (`mylab.com`), running it as an administrator.
-3.  During installation, configured the agent with the following key settings:
+4.  During installation, configure the agent with the following key settings:
     - **Active Directory Domain:** `mylab.com`
     - **Use SSL Connection:** *Unchecked* (Not required for lab LDAP sync)
     - **Use Proxy Server:** *Unchecked* (Automatic detection for homelab)
     - **Service Account:** Used the default `OktaServiceAccount` created by the installer.
     - **Okta Organization URL:** `https://trial-3229378.okta.com`
-4.  Authorized the agent by signing into the Okta Admin account when prompted.
+5.  Authorized the agent by signing into the Okta Admin account when prompted.
 
 **Outcome:** The agent established a continuous, secure connection, enabling user and group synchronization from AD to Okta.
 ### Step 2: Configure User Import & Attribute Mapping
