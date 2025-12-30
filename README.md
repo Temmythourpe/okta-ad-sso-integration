@@ -76,7 +76,6 @@ The final step of the synchronization workflow was to review and confirm the use
 - User accounts (e.g., `john.smith`, `alice.johnson`) were successfully created in Okta with their source listed as `mylab.com`.
 - Users appeared in **Directory > People** with an **Active** status, completing the hybrid identity lifecycle from on-premise AD to the cloud.
 <img width="805" height="723" alt="image" src="https://github.com/user-attachments/assets/cba348fc-952c-4b87-a8a5-d233d38c2a30" />
-<img width="805" height="723" alt="image" src="https://github.com/user-attachments/assets/4e27e5c9-5148-4d40-ae73-e710dfd29388" />
 
 ### Step 4: Configure SAML SSO for a Cloud Application (Slack)
 The goal was to use Okta as the Identity Provider (IdP) to enable Single Sign-On for a cloud application, demonstrating centralized access control.
