@@ -36,8 +36,8 @@ The first step was to create a secure bridge between the on-premise Active Direc
 <img width="498" height="384" alt="Okta-installation" src="https://github.com/user-attachments/assets/982e3e63-b292-4a9c-855e-a46c5affaf5d" />
 
 2.  Installed the agent on the Windows Server domain controller (`mylab.com`), running it as an administrator.
-<img width="947" height="738" alt="image" src="https://github.com/user-attachments/assets/2c2ee986-8f2f-41df-91f7-d7b022609bf0" />
-<img width="761" height="483" alt="image" src="https://github.com/user-attachments/assets/cbda205e-b4c5-498a-987e-a03445c3ac2e" />
+<img width="947" height="738" alt="image" src="https://github.com/user-attachments/assets/2c2ee986-8f2f-41df-91f7-d7b022609bf0" /><img width="761" height="483" alt="image" src="https://github.com/user-attachments/assets/cbda205e-b4c5-498a-987e-a03445c3ac2e" />
+
 3.  During installation, configure the agent with the following key settings:
     - **Active Directory Domain:** `mylab.com`
     - **Use SSL Connection:** *Unchecked* (Not required for lab LDAP sync)
