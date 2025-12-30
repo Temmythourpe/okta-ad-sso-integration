@@ -33,10 +33,8 @@ The first step was to create a secure bridge between the on-premise Active Direc
 
 **Actions Taken:**
 1. Downloaded the **Okta Active Directory Agent** installer from the Okta Admin Console (`Directory > Directory Integrations`).
-<img width="498" height="384" alt="Okta-installation" src="https://github.com/user-attachments/assets/982e3e63-b292-4a9c-855e-a46c5affaf5d" />
-
 2.  Installed the agent on the Windows Server domain controller (`mylab.com`), running it as an administrator.
-<img width="947" height="738" alt="image" src="https://github.com/user-attachments/assets/2c2ee986-8f2f-41df-91f7-d7b022609bf0" /><img width="761" height="483" alt="image" src="https://github.com/user-attachments/assets/cbda205e-b4c5-498a-987e-a03445c3ac2e" />
+<img width="498" height="384" alt="Okta-installation" src="https://github.com/user-attachments/assets/982e3e63-b292-4a9c-855e-a46c5affaf5d" />
 
 3.  During installation, configure the agent with the following key settings:
     - **Active Directory Domain:** `mylab.com`
@@ -47,8 +45,13 @@ The first step was to create a secure bridge between the on-premise Active Direc
 4.  Authorized the agent by signing into the Okta Admin account when prompted.
 
 **Outcome:** The agent established a continuous, secure connection, enabling user and group synchronization from AD to Okta.
+<img width="947" height="738" alt="image" src="https://github.com/user-attachments/assets/2c2ee986-8f2f-41df-91f7-d7b022609bf0" />
+<img width="761" height="483" alt="image" src="https://github.com/user-attachments/assets/cbda205e-b4c5-498a-987e-a03445c3ac2e" />
+
 ### Step 2: Configure User Import & Attribute Mapping
 With the agent connected, the next task was to define which users to import and how their AD attributes map to Okta's user profile.
+<img width="946" height="811" alt="image" src="https://github.com/user-attachments/assets/218eaf20-7c88-4e30-96d3-f7f0c9cbcd65" />
+<img width="931" height="784" alt="image" src="https://github.com/user-attachments/assets/3679b1e1-8cce-40c4-bf1a-a3538dc256fd" />
 
 **Actions Taken:**
 1.  In the Okta Admin Console, navigated to the `mylab.com` directory settings and selected the **"Import"** tab.
@@ -61,6 +64,7 @@ With the agent connected, the next task was to define which users to import and 
 **Outcome:** Active Directory user accounts from the `GRP_IT` and `GRP_HR` groups were successfully discovered and staged for import into Okta. This step highlighted the importance of attribute mapping in identity synchronization.
 ### Step 3: Import & Activate Users
 The final step of the synchronization workflow was to review and confirm the user import from Active Directory into Okta.
+<img width="782" height="697" alt="image" src="https://github.com/user-attachments/assets/48944a52-ea39-461f-b729-7ee3dbbe5d0b" />
 
 **Actions Taken:**
 1.  On the **import preview screen**, Okta listed all discovered AD users with the status **"NO Okta user matches found"** and **"NEW Okta user"**, correctly identifying them for initial creation.
@@ -71,8 +75,12 @@ The final step of the synchronization workflow was to review and confirm the use
 **Outcome:** 
 - User accounts (e.g., `john.smith`, `alice.johnson`) were successfully created in Okta with their source listed as `mylab.com`.
 - Users appeared in **Directory > People** with an **Active** status, completing the hybrid identity lifecycle from on-premise AD to the cloud.
+<img width="805" height="723" alt="image" src="https://github.com/user-attachments/assets/cba348fc-952c-4b87-a8a5-d233d38c2a30" />
+<img width="805" height="723" alt="image" src="https://github.com/user-attachments/assets/4e27e5c9-5148-4d40-ae73-e710dfd29388" />
+
 ### Step 4: Configure SAML SSO for a Cloud Application (Slack)
 The goal was to use Okta as the Identity Provider (IdP) to enable Single Sign-On for a cloud application, demonstrating centralized access control.
+<img width="920" height="770" alt="image" src="https://github.com/user-attachments/assets/8721c94d-fa6c-422c-896f-0f4f6ba81116" />
 
 **Actions Taken in Okta:**
 1.  Added the **Slack** application from the Okta Application Catalog.
