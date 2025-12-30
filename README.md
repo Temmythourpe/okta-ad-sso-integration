@@ -1,22 +1,14 @@
 # Okta & Active Directory SSO Integration Lab
 
 ## Project Overview
-This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing an end-to-end enterprise identity workflow.
+This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). 
+The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing an end-to-end enterprise identity workflow.
 
 **Key Skills Demonstrated:** Identity & Access Management (IAM), Okta Administration, Active Directory Synchronization, SAML/SSO Configuration, Troubleshooting.
 
 ## Reference: The Foundation
-This project extends the user lifecycle automation built in a previous lab: **[Active Directory User Management](https://github.com/Temmythourpe/Active-Directory-User-Management)**. That project automated user onboarding/offboarding in a Windows Server Active Directory environment (`mylab.com`).
-
-## Lab Architecture# Okta & Active Directory SSO Integration Lab
-
-## Project Overview
-This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing an end-to-end enterprise identity workflow.
-
-**Key Skills Demonstrated:** Identity & Access Management (IAM), Okta Administration, Active Directory Synchronization, SAML/SSO Configuration, Troubleshooting.
-
-## Reference: The Foundation
-This project extends the user lifecycle automation built in a previous lab: **[Active Directory User Management](https://github.com/Temmythourpe/Active-Directory-User-Management)**. The project automated user onboarding/offboarding in a Windows Server Active Directory environment (mylab.com).
+This project extends the user lifecycle automation built in a previous lab: **[Active Directory User Management](https://github.com/Temmythourpe/Active-Directory-User-Management)**. 
+The project automated user onboarding/offboarding in a Windows Server Active Directory environment (`mylab.com`).
 
 ## Lab Architecture
 This project connected two primary environments:
