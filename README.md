@@ -1,5 +1,7 @@
 # Okta & Active Directory SSO Integration Lab
 
+<img width="1127" height="720" alt="image" src="https://github.com/user-attachments/assets/4d390ba3-dd45-43af-8d72-191b769effcc" />
+
 ## Project Overview
 This project demonstrates a modern **hybrid identity management** setup by integrating an on-premise **Active Directory** environment with **Okta** as a cloud Identity Provider (IdP). 
 The goal was to synchronize user accounts and configure **SAML-based Single Sign-On (SSO)** for a cloud application (Slack), showcasing an end-to-end enterprise identity workflow.
