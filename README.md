@@ -17,7 +17,7 @@ This project connected two primary environments:
 1.  **On-Premise Lab (mylab.com):** A Windows Server 2022 domain controller hosting Active Directory Domain Services, with users and groups managed by the [(https://github.com/Temmythourpe/Active-Directory-User-Management/blob/main/UserManagement-Project/Scripts/New-UserOnboarding.ps1)].
 2.  **Cloud Identity Platform (Okta):** A free Okta Developer account used as the central Identity Provider (IdP).
 
-<img width="220" height="476" alt="Okta-flow-diagram drawio" src="https://github.com/user-attachments/assets/a7be1c1d-951c-4ac4-a7ea-fb7e039e98ce" />
+<img width="834" height="639" alt="Okta-AD-SSO-Integration drawio" src="https://github.com/user-attachments/assets/d694f577-5f8d-4c8d-98c0-313f11d71b72" />
 
 ## Implementation Steps
 
