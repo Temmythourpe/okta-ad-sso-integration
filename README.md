@@ -1,5 +1,13 @@
 # Okta & Active Directory SSO Integration Lab
 
+![Slack](https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=white)
+![SAML](https://img.shields.io/badge/SAML-2.0-E34F26?logo=auth0&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?logo=windows&logoColor=white)
+![SSO](https://img.shields.io/badge/SSO-Single_Sign_On-00B8D4?logo=auth0&logoColor=white)
+![Okta](https://img.shields.io/badge/Okta-007DC1?logo=okta&logoColor=white)
+![IdP](https://img.shields.io/badge/Identity_Provider-Configuration-9C27B0)
+![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?logo=windows&logoColor=white)
+
 <img width="1127" height="720" alt="image" src="https://github.com/user-attachments/assets/4d390ba3-dd45-43af-8d72-191b769effcc" />
 
 ## Project Overview
